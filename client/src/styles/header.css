@@ -1,0 +1,104 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index:999;
+}
+.logo {
+  display: inline-block;
+  float: left;
+  padding: 1em;
+  background: grey;
+  color: #fff;
+}
+.home {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+ul {
+  display: inline-block;
+  /* width: 100%; */
+  padding: 6px;
+  margin: 0 auto;
+}
+
+li {
+  margin: 10px;
+
+  display: inline-block;
+  cursor: pointer;
+}
+
+#res-icons {
+  margin: 5px 10px;
+  z-index: 5;
+  width: 35px;
+  height: 35px;
+  position: relative;
+  float: right;
+  display: none;
+}
+#res-menu {
+  display: none;
+}
+
+.line-1,
+.line-2,
+.line-3 {
+  display: inline-block;
+  width: 100%;
+  height: 4px;
+  background: #000;
+  position: absolute;
+  transition: 0.4s ease-in-out;
+}
+
+.line-1 {
+  top: 10px;
+}
+
+.line-2 {
+  top: 20px;
+  left: 0;
+}
+
+.line-3 {
+  top: 30px;
+}
+
+#res-menu:checked ~ label .line-1 {
+  transform: rotate(45deg);
+  top: 20px;
+}
+
+#res-menu:checked ~ label .line-2 {
+  left: 100px;
+}
+
+#res-menu:checked ~ label .line-3 {
+  transform: rotate(-45deg);
+  top: 20px;
+}
+@media (max-width: 600px) {
+  .menu-items {
+    display: none;
+  }
+  #res-icons {
+    display: inline-block;
+  }
+  .logo {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header {
+    
+    display: block;
+  }
+}

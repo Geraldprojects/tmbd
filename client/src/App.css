@@ -1,0 +1,21 @@
+/*Css Reset*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  list-style: none;
+}
+/*Css Reset*/
+
+body,
+html {
+  font-family: Arial, Times, serif;
+  font-size: 16px;
+  width: 100%;
+  display: inline-block;
+  min-height: 100vh;
+  position: relative;
+  
+}
